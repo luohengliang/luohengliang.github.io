@@ -1,0 +1,168 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+/* top-hat */
+	#top-hat{
+		background:#000;
+		font-size:110%;
+		position:fixed;
+		top:0;
+		width:100%;
+		z-index:10;
+	}
+	#top-hat-mobile{
+		background:#000;
+		height:45px;
+		position:fixed;
+		top:0;
+		width:100%;
+		display:none;
+	}
+	
+/* main navigation */
+	.current{
+		color:#f26522;
+	}
+	#main-navigation{
+		float:left;
+		margin:0;
+	}
+	#main-navigation li{
+		float:left;
+		margin:0;
+	}
+	#main-navigation li a, #mobile-navigation li a{
+		color:#fff;
+		display:block;
+		text-decoration:none;
+		padding:15px;
+	}
+	#main-navigation a:hover, #main-navigation a:focus, #main-navigation a.current, #mobile-navigation a:hover, #mobile-navigation a:focus, #mobile-navigation a.current{
+		color:#f26522;
+	}
+	
+/* mobile-navigation */
+	#mobile-navigation{
+		margin:3px 0;
+	}
+	#mobile-navigation li{
+		margin:0;
+		padding: 0 10px;
+	}
+	#mobile-navigation li a{
+		padding:7px 0;
+	}
+	.menu-toggle{
+		background:url(../site-assets/mobile-icon-open-std.png) no-repeat center left;
+		background-size:20px;
+		display:block;
+		height:25px;
+	}
+	.menu-toggle-close{
+		background:url(../site-assets/mobile-icon-close-std.png) no-repeat center left;
+		background-size:20px;
+	}
+	#mobile-navigation ul{
+		display:none;
+		margin:0;
+	}
+	#mobile-navigation ul li{
+		border-bottom:1px solid #333;
+	}
+	
+/* page */
+	#page{
+		margin:100px 0 40px;
+	}
+	
+/* footer */
+	#footer{
+		border-top:1px solid #444;
+		margin-top:50px;
+		padding-top:5px;
+	}
+	
+/* Type */
+	.publications strong{
+		display:block;
+	}
+	
+/* images */
+	.img-style{
+		border:4px solid #fff;
+		box-shadow:0px 1px 4px #966;
+	}
+	
+/* Misc */
+	.talk-details{
+		display:block;
+		font-size:85%;
+	}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#top-hat{
+			display:none;
+		}
+		#top-hat-mobile{
+			display:block;
+		}
+		#page{
+			margin:70px 0 40px;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+@font-face {
+    font-family: 'web_symbolsregular';
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../fonts/websymbols-regular-webfont.svg#web_symbolsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
