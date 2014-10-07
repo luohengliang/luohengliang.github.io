@@ -31,3 +31,11 @@ void draw()
     dy = -dy;
   }
 }
+
+void mouseClicked()
+{
+  X = mouseX;
+  Y = mouseY;
+  vx = random(1,3);
+  vy = random(1,3);
+}
