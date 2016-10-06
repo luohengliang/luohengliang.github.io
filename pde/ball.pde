@@ -1,6 +1,6 @@
 void setup()
 {
-  size(1200,900);
+  size(screen.width, screen.height);
   smooth();
 }
 
